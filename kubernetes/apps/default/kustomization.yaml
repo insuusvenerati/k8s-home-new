@@ -6,4 +6,4 @@ resources:
   - ./echo-server/ks.yaml
   - ./hajimari/ks.yaml
   - ./pvc-ssd.yaml
-  - ./nfs-subdir-external-ssd/kustomization.yaml
+  - ./nfs-subdir-external-ssd
