@@ -18,3 +18,4 @@ resources:
   - ./stakater.yaml
   - ./weave-gitops.yaml
   - ./nfs-subdir-external.yaml
+  - ./k8s-at-home.yaml
