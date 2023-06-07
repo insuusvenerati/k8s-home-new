@@ -27,6 +27,7 @@ spec:
         ingressClassName: nginx
         annotations:
           cert-manager.io/cluster-issuer: letsencrypt-production
+          hajimari.io/enable: "true"
         hosts:
           - host: &host jackett.${SECRET_DOMAIN}
             paths:
@@ -40,3 +41,4 @@ spec:
       config:
         enabled: true
         mountPath: /config
+        storageClass: nfs-client-ssd
