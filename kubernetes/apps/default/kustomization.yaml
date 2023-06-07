@@ -5,3 +5,5 @@ resources:
   - ./namespace.yaml
   - ./echo-server/ks.yaml
   - ./hajimari/ks.yaml
+  - ./pvc-ssd.yaml
+  - ./nfs-subdir-external-ssd/kustomization.yaml
