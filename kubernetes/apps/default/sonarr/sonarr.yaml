@@ -36,6 +36,7 @@ spec:
           cert-manager.io/cluster-issuer: letsencrypt-production
           hajimari.io/enable: "true"
           hajimari.io/group: Media
+          hajimari.io/icon: mdi:television-classic
         hosts:
           - host: &host sonarr.${SECRET_DOMAIN}
             paths:
