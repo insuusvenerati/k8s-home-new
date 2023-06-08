@@ -41,6 +41,29 @@ spec:
         matchNames:
           - default
           - monitoring
+      globalBookmarks:
+        - group: Default
+          bookmarks:
+            - name: Reddit
+              url: https://reddit.com
+              icon: mdi:reddit
+            - name: YouTube
+              url: https://youtube.com
+              icon: mdi:youtube
+        - group: Seedbox
+          bookmarks:
+            - name: Client Area
+              url: https://members.rapidseedbox.com/clientarea.php
+              icon: mdi:account
+            - name: Dashboard
+              url: https://dashboard-45-152-209-199.a.seedbox.vip/
+              icon: mdi:monitor-dashboard
+            - name: QBittorrent
+              url: https://dashboard-45-152-209-199.a.seedbox.vip/qbittorrent-user/
+              icon: mdi:download
+            - name: Syncthing
+              url: https://dashboard-45-152-209-199.a.seedbox.vip/syncthing/
+              icon: mdi:sync
     ingress:
       main:
         enabled: true
