@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Secret
+metadata:
+    name: elasticsearch-master-credentials
+    namespace: default
+type: Opaque
+data:
+    password: ENC[AES256_GCM,data:Y9PGYaT9caQlm9rQ,iv:znlUx/kMNiPQY7LFbwSI9HoeTC5M3aNAOwfwxgAZGGM=,tag:lVpzorWChVN/dOoA6aXSng==,type:str]
+    username: ENC[AES256_GCM,data:jYKF/Ibi8FVsI8xi,iv:OPF3rti1lfm5OnspF6+eS0rIVZN3/Kw2E5thQljLjDM=,tag:6o/JNIPzQtpeNQWUpkbUQQ==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age19gpymng4jmuvlf2h3fupa95lptysdpagxz5f7qs8sr8zh2m9zpcqjgucdp
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB0Szk0ODFvM3ltNnlTV1ZD
+            SmNVN3dQb3A3WkxIcitvWSthVWFDSXgyalg4CnZXaTJuQjVlZ0k0bk5qZHZrRzJ3
+            UWxjQWxnRmM0U3FqRDNkWkowZFRNNzQKLS0tIGcwOTdkQ1lPaWpFVjYyeUJmWUF0
+            d0dzNVJXT25Bd0I3eUtpdUNXVkdKN1kKS9eKSVAwdoEuSByiaBcDDKvJ5sISuDcV
+            J7v011ngRM+6cBKdr3KlEd7WT5mh2OwzZNm4nJTWbl6ekg5sbAPwjg==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2023-02-22T19:45:47Z"
+    mac: ENC[AES256_GCM,data:u4/U0hrzz7XdgsehJFgU/7TijKHVYi1VOZ+SYB8kWjlX2vNIxt0QPlEveFXteEKb12Dg/Dz+jhSXfD04slvsrHin94ONiwY86Uj80nMUipDZvUORnVE81QZj4U1Cf/3Cge7GVktgmgtqFljPVbVQBFqXib1+pa7oWaiLrM3GeAY=,iv:cun93ulRymc+cjeiGlZuZxegQoXCX1oWexQhlIvgHHE=,tag:CsxKD9KlrZl0Y60jCxJJEA==,type:str]
+    pgp: []
+    encrypted_regex: ^(data|stringData)$
+    version: 3.7.3

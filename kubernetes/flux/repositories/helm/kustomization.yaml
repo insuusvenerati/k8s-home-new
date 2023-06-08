@@ -19,3 +19,4 @@ resources:
   - ./weave-gitops.yaml
   - ./nfs-subdir-external.yaml
   - ./k8s-at-home.yaml
+  - ./stiforr.yaml
