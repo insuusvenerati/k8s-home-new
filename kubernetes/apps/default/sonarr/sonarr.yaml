@@ -49,7 +49,7 @@ spec:
     persistence:
       config:
         enabled: true
-        storageClass: nfs-client-ssd
+        storageClass: local-path
       vids:
         enabled: true
         mountPath: /data
