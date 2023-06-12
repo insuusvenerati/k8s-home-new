@@ -58,6 +58,8 @@ spec:
         rollOutPods: true
         ingress:
           enabled: true
+          annotations:
+            hajimari.io/enable: true
           className: nginx
           hosts:
             - &host "hubble.${SECRET_DOMAIN}"
