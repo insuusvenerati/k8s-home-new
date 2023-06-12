@@ -64,6 +64,14 @@ spec:
             - name: Syncthing
               url: https://dashboard-45-152-209-199.a.seedbox.vip/syncthing/
               icon: mdi:sync
+        - group: Homelab
+          bookmarks:
+            - name: Opnsense
+              url: https://opnsense.local.lan/
+              icon: mdi:router-wireless
+            - name: Proxmix
+              url: https://proxmox.local.lan:8006/
+              icon: mdi:server
     ingress:
       main:
         enabled: true
