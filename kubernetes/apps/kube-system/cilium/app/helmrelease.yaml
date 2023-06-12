@@ -59,7 +59,7 @@ spec:
         ingress:
           enabled: true
           annotations:
-            hajimari.io/enable: true
+            hajimari.io/enable: "true"
           className: nginx
           hosts:
             - &host "hubble.${SECRET_DOMAIN}"
