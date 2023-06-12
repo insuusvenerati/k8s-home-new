@@ -41,6 +41,7 @@ spec:
         matchNames:
           - default
           - monitoring
+          - kube-system
       globalBookmarks:
         - group: Default
           bookmarks:
