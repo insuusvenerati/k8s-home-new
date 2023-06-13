@@ -57,6 +57,11 @@ spec:
               replacement: $1
               sourceLabels: ["__meta_kubernetes_pod_node_name"]
               targetLabel: kubernetes_node
+        additionalScrapeConfigs:
+          - job_name: OPNSense
+            static_configs:
+              - targets:
+                  - 192.168.1.1:9100/metrics
     kubelet:
       enabled: true
       serviceMonitor:
