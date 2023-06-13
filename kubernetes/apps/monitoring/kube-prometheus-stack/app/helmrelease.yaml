@@ -61,7 +61,7 @@ spec:
           - job_name: OPNSense
             static_configs:
               - targets:
-                  - 192.168.1.1:9100/metrics
+                  - 192.168.1.1:9100
     kubelet:
       enabled: true
       serviceMonitor:
