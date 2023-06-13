@@ -43,6 +43,11 @@ spec:
           - monitoring
           - kube-system
       globalBookmarks:
+        - group: Media
+          bookmarks:
+            - name: Lidarr
+              url: http://192.168.1.168:8686/
+              icon: mdi:music
         - group: Default
           bookmarks:
             - name: Reddit
@@ -73,6 +78,8 @@ spec:
             - name: Proxmix
               url: https://proxmox.local.lan:8006/
               icon: mdi:server
+            - name: Home Assistant
+              url: http://192.168.1.136:8123/
     ingress:
       main:
         enabled: true
