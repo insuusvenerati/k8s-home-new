@@ -56,6 +56,9 @@ spec:
             - name: YouTube
               url: https://youtube.com
               icon: mdi:youtube
+            - name: Github
+              url: https://github.com
+              icon: mdi:github
         - group: Seedbox
           bookmarks:
             - name: Client Area
