@@ -12,3 +12,4 @@ resources:
   - ./overseerr
   - ./jackett
   - ./tubearchivist
+  - ./ha-ingress
