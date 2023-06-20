@@ -13,3 +13,4 @@ resources:
   - ./jackett
   - ./tubearchivist
   - ./ha-ingress
+  - ./bazarr

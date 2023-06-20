@@ -17,7 +17,7 @@ spec:
   values:
     image:
       repository: ghcr.io/linuxserver/bazarr
-      tag: 1.2.1
+      tag: development-version-v1.2.2-beta.21
       pullPolicy: IfNotPresent
     global:
       fullnameOverride: bazarr
@@ -36,7 +36,6 @@ spec:
         ingressClassName: nginx
         annotations:
           cert-manager.io/cluster-issuer: letsencrypt-production
-          external-dns.alpha.kubernetes.io/target: ipv4.${SECRET_DOMAIN}
           hajimari.io/enable: "true"
           hajimari.io/group: Media
           hajimari.io/icon: mdi:subtitles
@@ -53,6 +52,7 @@ spec:
       config:
         enabled: true
         mountPath: /config
+        storageClass: local-path
       vids:
         enabled: true
         mountPath: /vids
