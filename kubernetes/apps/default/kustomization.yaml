@@ -16,3 +16,4 @@ resources:
   - ./bazarr
   - ./plane-ingress
   - ./lidarr-ingress
+  - ./filebrowser-ingress
