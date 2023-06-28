@@ -43,6 +43,11 @@ spec:
           - monitoring
           - kube-system
       globalBookmarks:
+        - group: Work
+          bookmarks:
+            - name: Cal.com
+              url: https://cal.com
+              icon: mdi:calendar
         - group: Media
           bookmarks:
             - name: Lidarr
