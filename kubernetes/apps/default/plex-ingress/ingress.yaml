@@ -31,6 +31,7 @@ metadata:
     cert-manager.io/cluster-issuer: letsencrypt-production
     hajimari.io/enable: "true"
     hajimari.io/group: Media
+    nginx.ingress.kubernetes.io/app-root: /web
 
 spec:
   rules:
@@ -38,7 +39,7 @@ spec:
       http:
         paths:
           - pathType: Prefix
-            path: "/web"
+            path: "/"
             backend:
               service:
                 name: plex-ingress
