@@ -5,12 +5,12 @@ metadata:
   namespace: default
 spec:
   ports:
-    - port: 32400
+    - name: plex-ingress
+      port: 32400
       targetPort: 32400
       protocol: TCP
-  externalIPs:
-    - 192.168.1.150
-  # type: LoadBalancer
+  type: ClusterIP
+  ClusterIP: None
   externalTrafficPolicy: Local
 ---
 kind: Endpoints
@@ -22,7 +22,9 @@ subsets:
   - addresses:
       - ip: 192.168.1.150
     ports:
-      - port: 32400
+      - name: plex-ingress
+        port: 32400
+        protocol: TCP
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
@@ -31,6 +33,7 @@ metadata:
   namespace: default
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-production
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
     hajimari.io/enable: "true"
     hajimari.io/group: Media
     nginx.ingress.kubernetes.io/app-root: /web
@@ -47,6 +50,7 @@ spec:
                 name: plex-ingress
                 port:
                   number: 32400
+
   tls:
     - hosts:
         - plex.${SECRET_DOMAIN}
