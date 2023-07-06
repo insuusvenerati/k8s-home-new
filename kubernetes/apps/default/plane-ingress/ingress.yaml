@@ -18,7 +18,7 @@ metadata:
   namespace: default
 subsets:
   - addresses:
-      - ip: 192.168.1.177
+      - ip: 192.168.1.197
     ports:
       - port: 80
 ---
@@ -29,6 +29,7 @@ metadata:
   namespace: default
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-production
+    external-dns.alpha.kubernetes.io/target: "ingress.${SECRET_DOMAIN}"
     hajimari.io/enable: "true"
     hajimari.io/group: Dev
     hajimari.io/icon: mdi:airplane
