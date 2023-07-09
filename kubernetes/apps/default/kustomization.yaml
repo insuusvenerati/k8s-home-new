@@ -18,3 +18,4 @@ resources:
   - ./lidarr-ingress
   - ./filebrowser-ingress
   - ./plex-ingress
+  - ./tautulli-ingress
