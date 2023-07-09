@@ -8,6 +8,9 @@ spec:
     - port: 8123
       targetPort: 8123
       protocol: TCP
+    - port: 8181
+      targetPort: 8181
+      protocol: TCP
   type: LoadBalancer
   externalTrafficPolicy: Local
 ---
@@ -21,6 +24,7 @@ subsets:
       - ip: 192.168.1.136
     ports:
       - port: 8123
+      - port: 8181
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
@@ -41,6 +45,13 @@ spec:
                 name: home-assistant-ingress
                 port:
                   number: 8123
+          - pathType: Prefix
+            path: "/"
+            backend:
+              service:
+                name: home-assistant-ingress
+                port:
+                  number: 8181
   tls:
     - hosts:
         - home-assistant.${SECRET_DOMAIN}
