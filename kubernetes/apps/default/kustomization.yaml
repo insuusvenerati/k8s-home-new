@@ -11,7 +11,7 @@ resources:
   - ./radarr
   - ./overseerr
   - ./jackett
-  #- ./tubearchivist
+  - ./tubearchivist
   - ./ha-ingress
   - ./bazarr
   - ./plane-ingress
