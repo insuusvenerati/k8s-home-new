@@ -23,7 +23,7 @@ spec:
   values:
     image:
       repository: bbilly1/tubearchivist
-      tag: unstable
+      tag: v0.4.0
     env:
       TA_HOST: "tubearchivist.${SECRET_DOMAIN}"
       TA_PASSWORD: "changeme"
