@@ -42,7 +42,7 @@ spec:
           hajimari.io/icon: mdi:kubernetes
         issuer:
           name: letsencrypt-production
-          scope: disabled
+          scope: cluster
         hosts:
           - localhost
           - kubernetes.${SECRET_DOMAIN}
