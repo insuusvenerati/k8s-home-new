@@ -33,18 +33,20 @@ spec:
       - --disable-settings-authorizer
       - --enable-insecure-login
       - --token-ttl=43200
-    ingress:
-      enabled: true
-      className: nginx
-      annotations:
-        cert-manager.io/cluster-issuer: letsencrypt-production
-        hajimari.io/icon: mdi:kubernetes
-      hosts:
-        - &host "kubernetes.${SECRET_DOMAIN}"
-      tls:
-        - hosts:
-            - *host
-          secretName: kubernetes-dashboard-tls
+    app:
+      ingress:
+        enabled: true
+        ingressClassName: nginx
+        annotations:
+          cert-manager.io/cluster-issuer: letsencrypt-production
+          hajimari.io/icon: mdi:kubernetes
+        issuer:
+          name: letsencrypt-production
+          scope: disabled
+        hosts:
+          - localhost
+          - kubernetes.${SECRET_DOMAIN}
+        secretName: kubernetes-dashboard-tls
     metricsScraper:
       enabled: true
     serviceMonitor:
@@ -52,4 +54,6 @@ spec:
     nginx:
       enabled: false
     cert-manager:
+      enabled: false
+    metrics-server:
       enabled: false
