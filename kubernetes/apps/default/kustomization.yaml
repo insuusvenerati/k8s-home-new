@@ -17,5 +17,5 @@ resources:
   - ./plane-ingress
   - ./lidarr-ingress
   - ./filebrowser-ingress
-  - ./plex-ingress
+  # - ./plex-ingress
   - ./tautulli-ingress
