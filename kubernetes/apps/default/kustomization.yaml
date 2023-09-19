@@ -14,8 +14,8 @@ resources:
   - ./tubearchivist
   - ./ha-ingress
   - ./bazarr
-  - ./plane-ingress
+  # - ./plane-ingress
   - ./lidarr-ingress
-  - ./filebrowser-ingress
+  # - ./filebrowser-ingress
   # - ./plex-ingress
-  - ./tautulli-ingress
+  # - ./tautulli-ingress
