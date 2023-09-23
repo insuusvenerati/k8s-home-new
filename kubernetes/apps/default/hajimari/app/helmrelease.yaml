@@ -70,13 +70,13 @@ spec:
               url: https://members.rapidseedbox.com/clientarea.php
               icon: mdi:account
             - name: Dashboard
-              url: https://dashboard-45-152-209-199.a.seedbox.vip/
+              url: https://dashboard-103-139-49-223.a.seedbox.vip/
               icon: mdi:monitor-dashboard
             - name: QBittorrent
-              url: https://dashboard-45-152-209-199.a.seedbox.vip/qbittorrent-user/
+              url: https://dashboard-103-139-49-223.a.seedbox.vip/qbittorrent-user/
               icon: mdi:download
             - name: Syncthing
-              url: https://dashboard-45-152-209-199.a.seedbox.vip/syncthing/
+              url: https://dashboard-103-139-49-223.a.seedbox.vip/syncthing/
               icon: mdi:sync
         - group: Homelab
           bookmarks:
