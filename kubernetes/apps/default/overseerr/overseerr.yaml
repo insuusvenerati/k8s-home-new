@@ -30,8 +30,8 @@ spec:
         cpu: 250m
         memory: 512Mi
     image:
-      repository: sctx/overseerr
-      tag: 1.33.2
+      repository: ghcr.io/sct/overseerr
+      tag: be047427df62e480fc9b69cb93258837ed72bcf4
       pullPolicy: IfNotPresent
     env:
       TZ: America/Chicago
