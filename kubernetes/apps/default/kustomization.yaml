@@ -15,7 +15,7 @@ resources:
   # - ./ha-ingress
   - ./bazarr
   # - ./plane-ingress
-  - ./lidarr-ingress
+  # - ./lidarr-ingress
   # - ./filebrowser-ingress
   # - ./plex-ingress
   # - ./tautulli-ingress
