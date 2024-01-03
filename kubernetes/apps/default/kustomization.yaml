@@ -12,7 +12,7 @@ resources:
   - ./overseerr
   - ./jackett
   - ./tubearchivist
-  - ./ha-ingress
+  # - ./ha-ingress
   - ./bazarr
   # - ./plane-ingress
   - ./lidarr-ingress
