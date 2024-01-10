@@ -31,7 +31,7 @@ spec:
         memory: 512Mi
     image:
       repository: sctx/overseerr
-      tag: 8251c73ffae678c89eae2de13ee2e9a0afb8d755
+      tag: 5c60ffc567df3500f9435603a15fd10fa3e038f8
       pullPolicy: IfNotPresent
     env:
       TZ: America/Chicago
