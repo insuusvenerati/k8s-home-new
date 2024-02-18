@@ -32,7 +32,7 @@ spec:
       annotations:
         reloader.stakater.com/auto: "true"
     image:
-      repository: docker.io/cloudflare/cloudflared
+      repository: cloudflare/cloudflared
       tag: 2024.2.0
     env:
       NO_AUTOUPDATE: "true"
