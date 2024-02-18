@@ -19,4 +19,4 @@ resources:
   # - ./filebrowser-ingress
   # - ./plex-ingress
   # - ./tautulli-ingress
-  - ./ptero-ingress
+  # - ./ptero-ingress
